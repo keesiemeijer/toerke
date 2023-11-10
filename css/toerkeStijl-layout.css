@@ -1,0 +1,229 @@
+/* @override http://toerke.be/css/toerkeStijl-layout.css */
+
+/* @override http://toerke.dev/css/toerkeStijl-layout.css */
+
+
+
+
+.main-heading {
+	position: relative;
+	padding: 2.19em 0 0 0;
+	height: 18em;
+}
+
+.main-heading {
+	background:url(/gfx/toerke-logo9.jpg) no-repeat 0 2.19em;
+}
+
+h1 {
+	
+	margin-top: 3.3em;
+	
+}	
+
+
+
+/* layout */
+#wrapper {
+	/*
+	columns = 124px
+	gutters = 20px
+	width =	(7*124)+(6*20) = 988px
+	font-size = 16px 
+	988px / 16px = 61.75em
+	 */
+	position: relative;
+	margin: 0 auto;
+	overflow: auto;
+	max-width: 61.75em; 
+	padding: 0 1.25em; /* 20px / 16px = 1.25em */
+}
+
+#posts article, .default.article, #posts nav#route, .tag, div.pagenavi {
+		/* 660px / 700px */ 
+		
+		
+	width: 94.2857143%;
+	margin: 0 0 1.5em 0;
+	/*overflow: hidden;*/
+	}
+#posts article.comment {
+	width: 100%;
+	
+}
+
+#posts {
+	/* 
+	columns = 124px
+	gutters = 20px
+	width = (124*5) + (4*20) = 700px
+	700px / 988px = 0.708502024
+	*/
+	width: 70.85%; /* 700px / 988px */         	
+	float: left;
+	margin-bottom: 2em;
+}
+
+
+
+#divRechts {
+	
+	/* 
+	columns = 124px
+	gutters = 20px
+	width = 124+20+124 = 268px
+	268px / 988px = 0.271255061
+	*/
+	
+	float: right;
+	width: 27.1255061%;
+	margin-bottom: 2em;
+}
+
+@media (max-width: 600px){
+
+}
+
+@media (min-width: 600px){
+h1 {
+	/* 660+7 */
+	width: 67.5101215%; /*  700px / 988px */
+	
+	
+}	
+
+h1 a {
+	/*
+	h1 fon-size = 55px
+	7px = 7/55 = 0.127272727 em
+	*/
+	padding: 0 .127272727em;
+	
+}
+
+.pagenavi li.pages{
+	display: inline;
+}
+
+
+.has-pullquote,#map {
+	display: block;
+}
+
+
+}
+@media (max-width: 600px){
+	#divRechts{
+	float: none;
+	display: block;
+	width:100%;
+	
+}
+
+
+
+#posts{
+	float: none;
+	width:100%;
+	text-align: left;
+	
+}
+.Kees,
+.Kees-en,
+.Sarah,
+.Sarah-en,
+.default {
+	
+	text-align: justify;
+	
+}
+
+.has-pullquote {
+	display: block;
+}
+
+	
+}	
+
+@media all and (max-width: 768px) and (min-width: 600px) {
+	
+.pagenavi li.pages{
+	display: none;
+}
+.Sub a {
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+a.camera {
+	
+}
+
+#map, #reactions, #friends, #subscription {
+	display: none;
+}
+
+.has-pullquote {
+	display: none;
+}
+
+
+}
+@media (min-width: 768px){
+	#divRechts #map{
+	max-width: 268px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	
+}
+
+#divKaartje {
+	padding: 0;
+	overflow: hidden;
+}
+
+#divKaartje img {
+	float: right;
+	max-width: 100%;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+#divVert {
+	border-left: 1px solid #f00;
+	height: 200px;
+}
+
+#divHorz {
+	border-top: 1px solid #f00;
+	width: 265px;
+	top: 50%;
+}
+
+.Kees,
+.Kees-en,
+.Sarah,
+.Sarah-en,
+.default {
+		text-align: justify;
+	
+}
+
+.has-pullquote {
+	display: block;
+}
+
+
+}
+
+
+@media (max-width: 900px){
+	h1 {
+	width: auto;
+}
+	h1 a{
+	padding: 0;
+}
+	
+}
+
+
+
